@@ -821,10 +821,9 @@ void() PlayerDeathThink =
 	self.button2 = 0;
 	respawn();
 };
-
-
 void() PlayerJump =
 {
+
 	if (self.flags & FL_WATERJUMP)
 		return;
 	
@@ -855,6 +854,8 @@ void() PlayerJump =
 // player jumping sound
 	sound (self, CHAN_BODY, "player/plyrjmp8.wav", 1, ATTN_NORM);
 	self.flags = self.flags - FL_ONGROUND;
+	// attempt to draw puffs below feet on jump - bizz
+	TE_gunshot(self.origin);
 	// below is where the player actually jumps. Original value 270 - Bizz
 	self.velocity_z = self.velocity_z + 270;
 };

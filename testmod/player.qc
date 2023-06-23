@@ -409,7 +409,7 @@ vector(float dm) VelocityForDamage =
 	}
 	else
 		v = v * 10;
-
+		
 	return v;
 };
 
@@ -565,6 +565,8 @@ void() set_suicide_frame =
 	self.deadflag = DEAD_DEAD;
 	self.nextthink = -1;
 };
+
+
 
 
 void()  player_diea1    =       [       $deatha1,       player_diea2    ] {};
