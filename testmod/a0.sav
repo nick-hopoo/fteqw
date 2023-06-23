@@ -1,0 +1,2196 @@
+5
+Introduction___________________________
+4353.000000
+100.000000
+0.000000
+25.000000
+0.000000
+0.000000
+0.000000
+1.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+1.000000
+start
+1201.543379
+m
+mmnmmommommnonmmonqnmmo
+abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba
+mmmmmaaaaammmmmaaaaaabcdefgabcdefg
+mamamamamama
+jklmnopqrstuvwxyzyxwvutsrqponmlkj
+nmonqnmomnmomomno
+mmmaaaabcdefgmmmmaaaammmaamm
+mmmaaammmaaammmabcdefaaaammmmabcdefmmmaaaa
+aaaaaaaazzzzzzzz
+mmamammmmammamamaaamammma
+abcdefghijklmnopqrrqponmlkjihgfedcba
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+a
+{
+"self" "60"
+"other" "0"
+"world" "0"
+"time" "1201.442383"
+"frametime" "0.100000"
+"force_retouch" "0"
+"mapname" "start"
+"deathmatch" "0"
+"coop" "0"
+"teamplay" "0"
+"serverflags" "0"
+"total_secrets" "0"
+"total_monsters" "0"
+"found_secrets" "0"
+"killed_monsters" "0"
+"parm1" "4353"
+"parm2" "100"
+"parm3" "0"
+"parm4" "25"
+"parm5" "0"
+"parm6" "0"
+"parm7" "0"
+"parm8" "1"
+"parm9" "0"
+"parm10" "0"
+"parm11" "0"
+"parm12" "0"
+"parm13" "0"
+"parm14" "0"
+"parm15" "0"
+"parm16" "0"
+"v_forward" "0.637637 0.768962 0.0460032"
+"v_up" "-0.0293644 -0.0354122 0.998941"
+"v_right" "0.769777 -0.638313 -0"
+"trace_allsolid" "0"
+"trace_startsolid" "0"
+"trace_fraction" "0.820281"
+"trace_endpos" "1104.64 2447.97 85.9091"
+"trace_plane_normal" "0 -1 0"
+"trace_plane_dist" "-2448"
+"trace_ent" "0"
+"trace_inopen" "1"
+"trace_inwater" "0"
+"msg_entity" "0"
+"movedist" "0"
+"gameover" "0"
+"string_null" ""
+"empty_float" "0"
+"newmis" "0"
+"activator" "0"
+"damage_attacker" "0"
+"framecount" "15576"
+"skill" "1"
+"enemy_vis" "0"
+"enemy_infront" "0"
+"enemy_range" "0"
+"enemy_yaw" "0"
+"current_yaw" "0"
+"sight_entity" "0"
+"sight_entity_time" "0"
+"multi_ent" "0"
+"multi_damage" "0"
+"lastspawn" "0"
+"bodyque_head" "2"
+"modelindex_eyes" "57"
+"modelindex_player" "56"
+"intermission_running" "0"
+"intermission_exittime" "0"
+"nextmap" ""
+"stemp" "0"
+"otemp" "0"
+"s" "0"
+"old" "0"
+"le1" "0"
+"le2" "0"
+"lightning_end" "0"
+"hknight_type" "0"
+"shub" "0"
+}
+{//0
+"modelindex" "1"
+"absmin" "-736 176 -704"
+"absmax" "2208.000000 3232.000000 530.909119"
+"movetype" "7"
+"solid" "4"
+"classname" "worldspawn"
+"model" "maps/start.bsp"
+"mins" "-736 176 -704"
+"maxs" "2208.000000 3232.000000 530.909119"
+"sounds" "4"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "Introduction"
+"wad" "gfx/start.wad"
+}
+{//1
+"modelindex" "56"
+"absmin" "443.605316 353.227112 -0.968750"
+"absmax" "477.605316 387.227112 57.031250"
+"movetype" "3"
+"solid" "3"
+"origin" "460.605316 370.227112 24.031250"
+"oldorigin" "460.605316 370.227112 24.031250"
+"angles" "0.878906 50.333862 0.000000"
+"classname" "player"
+"model" "progs/player.mdl"
+"frame" "13"
+"mins" "-16 -16 -24"
+"maxs" "16 16 32"
+"size" "32 32 56"
+"think" "player_stand1"
+"nextthink" "1201.589233"
+"health" "100"
+"weapon" "2"
+"weaponmodel" "progs/v_shot2.mdl"
+"currentammo" "95"
+"ammo_shells" "95"
+"ammo_nails" "200"
+"ammo_rockets" "100"
+"ammo_cells" "198"
+"items" "397695"
+"takedamage" "2"
+"view_ofs" "0 0 22"
+"v_angle" "-2.636719 50.333862 0.000000"
+"netname" "Player"
+"flags" "4616"
+"colormap" "1"
+"team" "12"
+"max_health" "100"
+"watertype" "-1"
+"gravity" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"maxspeed" "320"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"clientcolors" "220"
+"uniquespawnid" "1"
+"th_pain" "player_pain"
+"th_die" "PlayerDie"
+"walkframe" "2"
+"attack_finished" "48.135395"
+"show_hostile" "48.435394"
+"air_finished" "1213.442383"
+"t_width" "43.625393"
+"dmg" "2"
+}
+{//2
+"absmin" "-1 -1 -1"
+"absmax" "1 1 1"
+"classname" "bodyque"
+"owner" "3"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//3
+"absmin" "-1 -1 -1"
+"absmax" "1 1 1"
+"classname" "bodyque"
+"owner" "4"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//4
+"absmin" "-1 -1 -1"
+"absmax" "1 1 1"
+"classname" "bodyque"
+"owner" "5"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//5
+"absmin" "-1 -1 -1"
+"absmax" "1 1 1"
+"classname" "bodyque"
+"owner" "2"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//6
+"absmin" "543 287 31"
+"absmax" "545 289 33"
+"origin" "544 288 32"
+"angles" "0 90 0"
+"classname" "info_player_start"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//7
+"absmin" "863 991 -169"
+"absmax" "865 993 -167"
+"origin" "864 992 -168"
+"classname" "fireball"
+"think" "fire_fly"
+"nextthink" "1201.771729"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "53"
+"uniquespawnid" "53"
+"speed" "600"
+}
+{//8
+"absmin" "207 1367 -1"
+"absmax" "257 1385 97"
+"solid" "1"
+"classname" "trigger_teleport"
+"model" ""
+"mins" "208 1368 0"
+"maxs" "256 1384 96"
+"size" "48 16 96"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "2"
+"uniquespawnid" "2"
+}
+{//9
+"absmin" "519 1367 -1"
+"absmax" "569 1385 97"
+"solid" "1"
+"classname" "trigger_teleport"
+"model" ""
+"mins" "520 1368 0"
+"maxs" "568 1384 96"
+"size" "48 16 96"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "2"
+"uniquespawnid" "2"
+}
+{//10
+"absmin" "839 1367 -1"
+"absmax" "889 1385 97"
+"solid" "1"
+"classname" "trigger_teleport"
+"model" ""
+"mins" "840 1368 0"
+"maxs" "888 1384 96"
+"size" "48 16 96"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "2"
+"uniquespawnid" "2"
+}
+{//11
+"absmin" "-201 1479 151"
+"absmax" "-199 1481 153"
+"origin" "-200 1480 152"
+"classname" "light_fluorospark"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"light_lev" "250"
+"style" "10"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "8"
+"uniquespawnid" "8"
+}
+{//12
+"absmin" "63 1487 159"
+"absmax" "65 1489 161"
+"origin" "64 1488 160"
+"classname" "light_fluoro"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"light_lev" "250"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//13
+"absmin" "543 1535 42"
+"absmax" "545 1537 44"
+"origin" "544 1536 43"
+"classname" "info_teleport_destination"
+"model" ""
+"targetname" "t1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "8"
+"uniquespawnid" "8"
+"mangle" "0 90 0"
+}
+{//14
+"modelindex" "5"
+"absmin" "1279 2319 79"
+"absmax" "1297 2385 257"
+"ltime" "0.100000"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*4"
+"mins" "1280 2320 80"
+"maxs" "1296 2384 256"
+"size" "16 64 176"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "15"
+"targetname" "t3"
+"owner" "14"
+"movedir" "-0.000000 1.000000 -0.000000"
+"noise1" "misc/null.wav"
+"noise2" "misc/null.wav"
+"noise3" "doors/medtry.wav"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "42"
+"uniquespawnid" "42"
+"pos2" "-0.000002 56.000000 0.000000"
+"speed" "400"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+}
+{//15
+"modelindex" "6"
+"absmin" "1279 2255 79"
+"absmax" "1297 2321 257"
+"ltime" "0.100000"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*5"
+"mins" "1280 2256 80"
+"maxs" "1296 2320 256"
+"size" "16 64 176"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "14"
+"targetname" "t3"
+"owner" "14"
+"movedir" "0.000000 -1.000000 -0.000000"
+"sounds" "3"
+"noise1" "doors/stndr2.wav"
+"noise2" "doors/stndr1.wav"
+"noise3" "doors/medtry.wav"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"pos2" "0.000001 -56.000000 0.000000"
+"speed" "400"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+}
+{//16
+"absmin" "1087 2207 -25"
+"absmax" "1089 2209 -23"
+"origin" "1088 2208 -24"
+"classname" "fireball"
+"think" "fire_fly"
+"nextthink" "1201.831299"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "3"
+"uniquespawnid" "3"
+"speed" "600"
+}
+{//17
+"absmin" "1071 2431 -25"
+"absmax" "1073 2433 -23"
+"origin" "1072 2432 -24"
+"classname" "fireball"
+"think" "fire_fly"
+"nextthink" "1203.946045"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"speed" "600"
+}
+{//18
+"modelindex" "7"
+"absmin" "-209 2303 63"
+"absmax" "-183 2369 257"
+"ltime" "0.100000"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*6"
+"mins" "-208 2304 64"
+"maxs" "-184 2368 256"
+"size" "24 64 192"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "19"
+"targetname" "t2"
+"owner" "18"
+"movedir" "0.000000 -1.000000 -0.000000"
+"sounds" "3"
+"noise1" "doors/stndr2.wav"
+"noise2" "doors/stndr1.wav"
+"noise3" "doors/medtry.wav"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "66"
+"uniquespawnid" "66"
+"pos2" "0.000001 -56.000000 0.000000"
+"speed" "50"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+}
+{//19
+"modelindex" "8"
+"absmin" "-209 2367 63"
+"absmax" "-183 2433 257"
+"ltime" "0.100000"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*7"
+"mins" "-208 2368 64"
+"maxs" "-184 2432 256"
+"size" "24 64 192"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "18"
+"targetname" "t2"
+"owner" "18"
+"movedir" "-0.000000 1.000000 -0.000000"
+"noise1" "misc/null.wav"
+"noise2" "misc/null.wav"
+"noise3" "doors/medtry.wav"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"pos2" "-0.000002 56.000000 0.000000"
+"speed" "50"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+}
+{//20
+"absmin" "-169 2303 63"
+"absmax" "-151 2433 193"
+"solid" "1"
+"classname" "trigger_onlyregistered"
+"model" ""
+"mins" "-168 2304 64"
+"maxs" "-152 2432 192"
+"size" "16 128 128"
+"touch" "trigger_onlyregistered_touch"
+"target" "t2"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "22"
+"uniquespawnid" "22"
+"message" "For registered users only!
+Play episode 1
+then call 1-800-idgames"
+"wait" "-1"
+}
+{//21
+"absmin" "175 1343 -17"
+"absmax" "289 1361 113"
+"solid" "1"
+"classname" "trigger_setskill"
+"model" ""
+"mins" "176 1344 -16"
+"maxs" "288 1360 112"
+"size" "112 16 128"
+"touch" "trigger_skill_touch"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "0"
+}
+{//22
+"absmin" "487 1343 -17"
+"absmax" "601 1361 113"
+"solid" "1"
+"classname" "trigger_setskill"
+"model" ""
+"mins" "488 1344 -16"
+"maxs" "600 1360 112"
+"size" "112 16 128"
+"touch" "trigger_skill_touch"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "1"
+}
+{//23
+"absmin" "807 1343 -17"
+"absmax" "921 1361 113"
+"solid" "1"
+"classname" "trigger_setskill"
+"model" ""
+"mins" "808 1344 -16"
+"maxs" "920 1360 112"
+"size" "112 16 128"
+"touch" "trigger_skill_touch"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "2"
+}
+{//24
+"absmin" "-577 2343 127"
+"absmax" "-519 2393 289"
+"solid" "1"
+"classname" "trigger_changelevel"
+"model" ""
+"mins" "-576 2344 128"
+"maxs" "-520 2392 288"
+"size" "56 48 160"
+"touch" "changelevel_touch"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"map" "e2m1"
+}
+{//25
+"absmin" "1511 3015 223"
+"absmax" "1561 3073 385"
+"solid" "1"
+"classname" "trigger_changelevel"
+"model" ""
+"mins" "1512 3016 224"
+"maxs" "1560 3072 384"
+"size" "48 56 160"
+"touch" "changelevel_touch"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"map" "e3m1"
+}
+{//26
+"absmin" "-89 1599 95"
+"absmax" "-39 1657 257"
+"solid" "1"
+"classname" "trigger_changelevel"
+"model" ""
+"mins" "-88 1600 96"
+"maxs" "-40 1656 256"
+"size" "48 56 160"
+"touch" "changelevel_touch"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"map" "e1m1"
+}
+{//27
+"absmin" "1263 2255 63"
+"absmax" "1281 2385 129"
+"solid" "1"
+"classname" "trigger_onlyregistered"
+"model" ""
+"mins" "1264 2256 64"
+"maxs" "1280 2384 128"
+"size" "16 128 64"
+"touch" "trigger_onlyregistered_touch"
+"target" "t3"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "For registered users only!
+Play episode 1
+then call 1-800-idgames"
+"wait" "5"
+}
+{//28
+"modelindex" "84"
+"absmin" "987 1031 99"
+"absmax" "1021 1065 165"
+"solid" "3"
+"origin" "1004 1048 124"
+"angles" "0 180 0"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "195"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc5"
+"nextthink" "1201.648926"
+"health" "60"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//29
+"modelindex" "84"
+"absmin" "987 911 47"
+"absmax" "1021 945 113"
+"solid" "3"
+"origin" "1004 928 72"
+"angles" "0 180 0"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "196"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc6"
+"nextthink" "1201.684814"
+"health" "60"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//30
+"modelindex" "84"
+"absmin" "691 975 27"
+"absmax" "725 1009 93"
+"solid" "3"
+"origin" "708 992 52"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "195"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc5"
+"nextthink" "1201.583618"
+"health" "60"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//31
+"modelindex" "84"
+"absmin" "691 1099 95"
+"absmax" "725 1133 161"
+"solid" "3"
+"origin" "708 1116 120"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "193"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc3"
+"nextthink" "1201.710449"
+"health" "60"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//32
+"absmin" "415 831 -25"
+"absmax" "689 1233 -7"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "416 832 -24"
+"maxs" "688 1232 -8"
+"size" "272 400 16"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "-0.000000 1.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This hall selects NORMAL skill"
+"wait" "2"
+}
+{//33
+"absmin" "95 831 -25"
+"absmax" "369 1217 -7"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "96 832 -24"
+"maxs" "368 1216 -8"
+"size" "272 384 16"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "-0.000000 1.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This hall selects EASY skill"
+"wait" "2"
+}
+{//34
+"absmin" "727 799 -25"
+"absmax" "1001 1249 -7"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "728 800 -24"
+"maxs" "1000 1248 -8"
+"size" "272 448 16"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "-0.000000 1.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This hall selects HARD skill"
+"wait" "2"
+}
+{//35
+"absmin" "511 1447 31"
+"absmax" "577 1465 161"
+"solid" "1"
+"classname" "trigger_teleport"
+"model" ""
+"mins" "512 1448 32"
+"maxs" "576 1464 160"
+"size" "64 16 128"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t4"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "3"
+"uniquespawnid" "3"
+}
+{//36
+"absmin" "543 279 42"
+"absmax" "545 281 44"
+"origin" "544 280 43"
+"classname" "info_teleport_destination"
+"model" ""
+"targetname" "t4"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"mangle" "0 90 0"
+}
+{//37
+"absmin" "95 1663 23"
+"absmax" "241 1793 129"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "96 1664 24"
+"maxs" "240 1792 128"
+"size" "144 128 104"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "-1.000000 -0.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This is the first episode:
+Dimension of the Doomed
+
+The mystical past comes alive..."
+"wait" "2"
+}
+{//38
+"absmin" "-121 1679 95"
+"absmax" "-31 1793 113"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "-120 1680 96"
+"maxs" "-32 1792 112"
+"size" "88 112 16"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "0.000000 -1.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "6"
+"uniquespawnid" "6"
+"message" "Walk into the Slipgate
+to start playing Quake!"
+"wait" "2"
+}
+{//39
+"absmin" "863 1663 23"
+"absmax" "1217 1793 177"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "864 1664 24"
+"maxs" "1216 1792 176"
+"size" "352 128 152"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "1.000000 0.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This is the fourth episode:
+The Elder World
+
+Your worst nightmares come true..."
+"wait" "2"
+}
+{//40
+"absmin" "607 2095 39"
+"absmax" "737 2385 137"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "608 2096 40"
+"maxs" "736 2384 136"
+"size" "128 288 96"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "-0.000000 1.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This is the third episode:
+The Netherworld
+
+Primal fear in a strange dimension..."
+"wait" "2"
+}
+{//41
+"absmin" "351 2175 71"
+"absmax" "481 2433 137"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "352 2176 72"
+"maxs" "480 2432 136"
+"size" "128 256 64"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "-0.000000 1.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This is the second episode:
+The Realm of Black Magic
+
+Ancient castles and
+strange beasts ahead..."
+"wait" "2"
+}
+{//42
+"absmin" "1007 1719 -361"
+"absmax" "1073 1753 -263"
+"solid" "1"
+"classname" "trigger_teleport"
+"model" ""
+"mins" "1008 1720 -360"
+"maxs" "1072 1752 -264"
+"size" "64 32 96"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "5"
+"uniquespawnid" "5"
+}
+{//43
+"modelindex" "27"
+"absmin" "1647 1615 -385"
+"absmax" "1681 1841 -63"
+"ltime" "0.100000"
+"movetype" "7"
+"solid" "4"
+"classname" "door"
+"model" "*26"
+"mins" "1648 1616 -384"
+"maxs" "1680 1840 -64"
+"size" "32 224 320"
+"touch" "door_touch"
+"use" "door_use"
+"think" "LinkDoors"
+"blocked" "door_blocked"
+"enemy" "43"
+"targetname" "t5"
+"owner" "43"
+"movedir" "0 0 1"
+"sounds" "3"
+"noise1" "doors/stndr2.wav"
+"noise2" "doors/stndr1.wav"
+"noise3" "doors/medtry.wav"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "4"
+"uniquespawnid" "4"
+"pos2" "0 0 312"
+"speed" "50"
+"wait" "-1"
+"noise4" "doors/meduse.wav"
+"dmg" "2"
+"lip" "8"
+"state" "1"
+}
+{//44
+"absmin" "1991 1703 -257"
+"absmax" "2049 1753 -95"
+"solid" "1"
+"classname" "trigger_changelevel"
+"model" ""
+"mins" "1992 1704 -256"
+"maxs" "2048 1752 -96"
+"size" "56 48 160"
+"touch" "changelevel_touch"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "12"
+"uniquespawnid" "12"
+"map" "e4m1"
+}
+{//45
+"modelindex" "84"
+"absmin" "1759 1591 -253"
+"absmax" "1793 1625 -187"
+"solid" "3"
+"origin" "1776 1608 -228"
+"angles" "0 90 0"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "192"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc2"
+"nextthink" "1201.641602"
+"health" "60"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "3"
+"uniquespawnid" "3"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//46
+"modelindex" "84"
+"absmin" "1759 1831 -253"
+"absmax" "1793 1865 -187"
+"solid" "3"
+"origin" "1776 1848 -228"
+"angles" "0 270 0"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "194"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc4"
+"nextthink" "1201.613770"
+"health" "60"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//47
+"absmin" "1623 1599 -377"
+"absmax" "1641 1857 -255"
+"solid" "1"
+"classname" "trigger_onlyregistered"
+"model" ""
+"mins" "1624 1600 -376"
+"maxs" "1640 1856 -256"
+"size" "16 256 120"
+"touch" "trigger_onlyregistered_touch"
+"target" "t5"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "For registered users only!
+Play episode 1
+then call 1-800-idgames"
+"wait" "5"
+}
+{//48
+"modelindex" "30"
+"absmin" "1183 1695 15"
+"absmax" "1217 1761 89"
+"movetype" "7"
+"solid" "4"
+"classname" "func_wall"
+"model" "*29"
+"mins" "1184 1696 16"
+"maxs" "1216 1760 88"
+"size" "32 64 72"
+"use" "func_wall_use"
+"spawnflags" "2048"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "3"
+"uniquespawnid" "3"
+}
+{//49
+"absmin" "703 303 23"
+"absmax" "705 305 25"
+"origin" "704 304 24"
+"angles" "0 90 0"
+"classname" "info_player_deathmatch"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "17"
+"uniquespawnid" "17"
+}
+{//50
+"absmin" "191 1167 -41"
+"absmax" "193 1169 -39"
+"origin" "192 1168 -40"
+"angles" "0 270 0"
+"classname" "info_player_deathmatch"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//51
+"absmin" "951 1895 -97"
+"absmax" "1025 1913 65"
+"solid" "1"
+"classname" "trigger_teleport"
+"model" ""
+"mins" "952 1896 -96"
+"maxs" "1024 1912 64"
+"size" "72 16 160"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"spawnflags" "2048"
+"target" "t1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "9"
+"uniquespawnid" "9"
+}
+{//52
+"absmin" "951 1919 -97"
+"absmax" "1025 1937 65"
+"solid" "1"
+"classname" "trigger_setskill"
+"model" ""
+"mins" "952 1920 -96"
+"maxs" "1024 1936 64"
+"size" "72 16 160"
+"touch" "trigger_skill_touch"
+"spawnflags" "2048"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "6"
+"uniquespawnid" "6"
+"message" "3"
+}
+{//53
+"absmin" "1407 2015 -185"
+"absmax" "1425 2113 -95"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "1408 2016 -184"
+"maxs" "1424 2112 -96"
+"size" "16 96 88"
+"touch" "multi_touch"
+"use" "multi_use"
+"movedir" "-1.000000 -0.000000 -0.000000"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This passage selects NIGHTMARE skill!"
+"wait" "2"
+}
+{//54
+"absmin" "927 2031 -65"
+"absmax" "937 2097 1"
+"solid" "2"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "928 2032 -64"
+"maxs" "936 2096 0"
+"size" "8 64 64"
+"use" "multi_use"
+"health" "1"
+"takedamage" "1"
+"max_health" "1"
+"sounds" "1"
+"noise" "misc/secret.wav"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "3"
+"uniquespawnid" "3"
+"message" "The Well of Wishes awaits in
+the Crypt of Decay!"
+"th_die" "multi_killed"
+"wait" "3"
+}
+{//55
+"modelindex" "39"
+"absmin" "351 1599 -17"
+"absmax" "737 2017 1"
+"movetype" "7"
+"solid" "4"
+"classname" "func_bossgate"
+"model" "*38"
+"mins" "352 1600 -16"
+"maxs" "736 2016 0"
+"size" "384 416 16"
+"use" "func_wall_use"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "3"
+"uniquespawnid" "3"
+}
+{//56
+"absmin" "-95 1769 -289"
+"absmax" "-93 1771 -287"
+"origin" "-94 1770 -288"
+"classname" "ambient_drip"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "11"
+"uniquespawnid" "11"
+}
+{//57
+"absmin" "-209 1999 -377"
+"absmax" "1 2017 -311"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "-208 2000 -376"
+"maxs" "0 2016 -312"
+"size" "208 16 64"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"movedir" "0.000000 -1.000000 -0.000000"
+"sounds" "2"
+"noise" "misc/talk.wav"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "2"
+"uniquespawnid" "2"
+"message" "Shub-Niggurath awaits you..."
+"wait" "5"
+}
+{//58
+"modelindex" "84"
+"absmin" "-353 1791 -289"
+"absmax" "-319 1825 -223"
+"solid" "3"
+"origin" "-336 1808 -264"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "195"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc5"
+"nextthink" "1201.697144"
+"health" "60"
+"spawnflags" "2049"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "12"
+"uniquespawnid" "12"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//59
+"modelindex" "84"
+"absmin" "103 1791 -289"
+"absmax" "137 1825 -223"
+"solid" "3"
+"origin" "120 1808 -264"
+"angles" "0 180 0"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "196"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc6"
+"nextthink" "1201.555298"
+"health" "60"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//60
+"modelindex" "84"
+"absmin" "-113 1591 -289"
+"absmax" "-79 1625 -223"
+"solid" "3"
+"origin" "-96 1608 -264"
+"angles" "0 90 0"
+"classname" "monster_zombie"
+"model" "progs/zombie.mdl"
+"frame" "196"
+"mins" "-16 -16 -24"
+"maxs" "16 16 40"
+"size" "32 32 64"
+"think" "zombie_cruc6"
+"nextthink" "1201.682617"
+"health" "60"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"th_stand" "zombie_stand1"
+"th_walk" "zombie_walk1"
+"th_run" "zombie_run1"
+"th_missile" "zombie_missile"
+"th_pain" "zombie_pain"
+"th_die" "zombie_die"
+}
+{//61
+"absmin" "-185 1671 -625"
+"absmax" "-7 1849 -607"
+"solid" "1"
+"classname" "trigger_changelevel"
+"model" ""
+"mins" "-184 1672 -624"
+"maxs" "-8 1848 -608"
+"size" "176 176 16"
+"touch" "changelevel_touch"
+"spawnflags" "1"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"map" "end"
+}
+{//62
+"absmin" "463 319 23"
+"absmax" "465 321 25"
+"origin" "464 320 24"
+"angles" "0 90 0"
+"classname" "info_player_coop"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "2"
+"uniquespawnid" "2"
+}
+{//63
+"absmin" "623 319 23"
+"absmax" "625 321 25"
+"origin" "624 320 24"
+"angles" "0 90 0"
+"classname" "info_player_coop"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//64
+"absmin" "703 335 23"
+"absmax" "705 337 25"
+"origin" "704 336 24"
+"angles" "0 90 0"
+"classname" "info_player_coop"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//65
+"absmin" "383 335 23"
+"absmax" "385 337 25"
+"origin" "384 336 24"
+"angles" "0 90 0"
+"classname" "info_player_coop"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//66
+"absmin" "-1 -1 -1"
+"absmax" "1 1 1"
+"classname" "func_episodegate"
+"model" "*41"
+"spawnflags" "2049"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "The Doomed Dimension
+has been completed!"
+}
+{//67
+"absmin" "-1 -1 -1"
+"absmax" "1 1 1"
+"classname" "func_episodegate"
+"model" "*42"
+"spawnflags" "2056"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "The Elder World
+has been completed!"
+}
+{//68
+"absmin" "-1 -1 -1"
+"absmax" "1 1 1"
+"classname" "func_episodegate"
+"model" "*43"
+"spawnflags" "2052"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "The Netherworld
+has been completed!"
+}
+{//69
+"absmin" "-1 -1 -1"
+"absmax" "1 1 1"
+"classname" "func_episodegate"
+"model" "*44"
+"spawnflags" "2050"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "The Realm of Black Magic
+has been completed!"
+}
+{//70
+"modelindex" "49"
+"absmin" "-353 1807 -385"
+"absmax" "-335 1905 -31"
+"movetype" "7"
+"solid" "4"
+"classname" "func_wall"
+"model" "*48"
+"mins" "-352 1808 -384"
+"maxs" "-336 1904 -32"
+"size" "16 96 352"
+"use" "func_wall_use"
+"spawnflags" "2048"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "15"
+"uniquespawnid" "15"
+}
+{//71
+"absmin" "543 1535 31"
+"absmax" "545 1537 33"
+"origin" "544 1536 32"
+"angles" "0 90 0"
+"classname" "info_player_start2"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "5"
+"uniquespawnid" "5"
+}
+{//72
+"absmin" "-71 1625 159"
+"absmax" "-69 1627 161"
+"origin" "-70 1626 160"
+"classname" "ambient_drone"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//73
+"absmin" "-623 2361 199"
+"absmax" "-621 2363 201"
+"origin" "-622 2362 200"
+"classname" "ambient_drone"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//74
+"absmin" "1545 3145 295"
+"absmax" "1547 3147 297"
+"origin" "1546 3146 296"
+"classname" "ambient_drone"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//75
+"absmin" "2105 1729 -185"
+"absmax" "2107 1731 -183"
+"origin" "2106 1730 -184"
+"classname" "ambient_drone"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+}
+{//76
+"absmin" "-25 1679 95"
+"absmax" "89 1793 113"
+"solid" "1"
+"classname" "trigger_multiple"
+"model" ""
+"mins" "-24 1680 96"
+"maxs" "88 1792 112"
+"size" "112 112 16"
+"touch" "multi_touch"
+"use" "multi_use"
+"spawnflags" "2048"
+"targetname" "t9"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"message" "This is the shareware version.
+
+Please register!
+
+Call 1-800-idgames today!"
+"wait" "2"
+}
+{//77
+"absmin" "255 1671 15"
+"absmax" "281 1785 49"
+"solid" "1"
+"classname" "trigger_onlyregistered"
+"model" ""
+"mins" "256 1672 16"
+"maxs" "280 1784 48"
+"size" "24 112 32"
+"touch" "trigger_onlyregistered_touch"
+"targetname" "t9"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"killtarget" "t9"
+}
+{//78
+"absmin" "959 775 159"
+"absmax" "961 777 161"
+"origin" "960 776 160"
+"classname" "info_intermission"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"mangle" "20 120 0"
+}
+{//79
+"absmin" "823 2319 207"
+"absmax" "825 2321 209"
+"origin" "824 2320 208"
+"classname" "info_intermission"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"mangle" "20 0 0"
+}
+{//80
+"absmin" "-257 2527 335"
+"absmax" "-255 2529 337"
+"origin" "-256 2528 336"
+"classname" "info_intermission"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"mangle" "20 225 0"
+}
+{//81
+"absmin" "-305 1719 -81"
+"absmax" "-303 1721 -79"
+"origin" "-304 1720 -80"
+"classname" "info_intermission"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"mangle" "20 45 0"
+}
+{//82
+"absmin" "-121 1959 -369"
+"absmax" "-87 1993 -351"
+"solid" "1"
+"classname" "trigger_onlyregistered"
+"model" ""
+"mins" "-120 1960 -368"
+"maxs" "-88 1992 -352"
+"size" "32 32 16"
+"touch" "trigger_onlyregistered_touch"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "1"
+"uniquespawnid" "1"
+"killtarget" "t10"
+}
+{//83
+"absmin" "-105 1743 -673"
+"absmax" "-87 1761 -655"
+"solid" "1"
+"classname" "trigger_teleport"
+"model" ""
+"mins" "-104 1744 -672"
+"maxs" "-88 1760 -656"
+"size" "16 16 16"
+"touch" "teleport_touch"
+"use" "teleport_use"
+"target" "t11"
+"dimension_solid" "255"
+"dimension_hit" "255"
+"drawflags" "96"
+"dimension_see" "255"
+"dimension_seen" "255"
+"Version" "5"
+"uniquespawnid" "5"
+}
+{//84
+}
+{//85
+}
+{//86
+}
+
+/*
+// FTE extended savegame
+sv.lightstyles 0 m
+sv.lightstyles 1 mmnmmommommnonmmonqnmmo
+sv.lightstyles 2 abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba
+sv.lightstyles 3 mmmmmaaaaammmmmaaaaaabcdefgabcdefg
+sv.lightstyles 4 mamamamamama
+sv.lightstyles 5 jklmnopqrstuvwxyzyxwvutsrqponmlkj
+sv.lightstyles 6 nmonqnmomnmomomno
+sv.lightstyles 7 mmmaaaabcdefgmmmmaaaammmaamm
+sv.lightstyles 8 mmmaaammmaaammmabcdefaaaammmmabcdefmmmaaaa
+sv.lightstyles 9 aaaaaaaazzzzzzzz
+sv.lightstyles 10 mmamammmmammamamaaamammma
+sv.lightstyles 11 abcdefghijklmnopqrrqponmlkjihgfedcba
+sv.lightstyles 63 a
+sv.model_precache 1 maps/start.bsp
+sv.model_precache 2 *1
+sv.model_precache 3 *2
+sv.model_precache 4 *3
+sv.model_precache 5 *4
+sv.model_precache 6 *5
+sv.model_precache 7 *6
+sv.model_precache 8 *7
+sv.model_precache 9 *8
+sv.model_precache 10 *9
+sv.model_precache 11 *10
+sv.model_precache 12 *11
+sv.model_precache 13 *12
+sv.model_precache 14 *13
+sv.model_precache 15 *14
+sv.model_precache 16 *15
+sv.model_precache 17 *16
+sv.model_precache 18 *17
+sv.model_precache 19 *18
+sv.model_precache 20 *19
+sv.model_precache 21 *20
+sv.model_precache 22 *21
+sv.model_precache 23 *22
+sv.model_precache 24 *23
+sv.model_precache 25 *24
+sv.model_precache 26 *25
+sv.model_precache 27 *26
+sv.model_precache 28 *27
+sv.model_precache 29 *28
+sv.model_precache 30 *29
+sv.model_precache 31 *30
+sv.model_precache 32 *31
+sv.model_precache 33 *32
+sv.model_precache 34 *33
+sv.model_precache 35 *34
+sv.model_precache 36 *35
+sv.model_precache 37 *36
+sv.model_precache 38 *37
+sv.model_precache 39 *38
+sv.model_precache 40 *39
+sv.model_precache 41 *40
+sv.model_precache 42 *41
+sv.model_precache 43 *42
+sv.model_precache 44 *43
+sv.model_precache 45 *44
+sv.model_precache 46 *45
+sv.model_precache 47 *46
+sv.model_precache 48 *47
+sv.model_precache 49 *48
+sv.model_precache 50 *49
+sv.model_precache 51 *50
+sv.model_precache 52 *51
+sv.model_precache 53 *52
+sv.model_precache 54 *53
+sv.model_precache 55 *54
+sv.model_precache 56 progs/player.mdl
+sv.model_precache 57 progs/eyes.mdl
+sv.model_precache 58 progs/h_player.mdl
+sv.model_precache 59 progs/gib1.mdl
+sv.model_precache 60 progs/gib2.mdl
+sv.model_precache 61 progs/gib3.mdl
+sv.model_precache 62 progs/s_bubble.spr
+sv.model_precache 63 progs/s_explod.spr
+sv.model_precache 64 progs/v_axe.mdl
+sv.model_precache 65 progs/v_shot.mdl
+sv.model_precache 66 progs/v_nail.mdl
+sv.model_precache 67 progs/v_rock.mdl
+sv.model_precache 68 progs/v_shot2.mdl
+sv.model_precache 69 progs/v_nail2.mdl
+sv.model_precache 70 progs/v_rock2.mdl
+sv.model_precache 71 progs/bolt.mdl
+sv.model_precache 72 progs/bolt2.mdl
+sv.model_precache 73 progs/bolt3.mdl
+sv.model_precache 74 progs/lavaball.mdl
+sv.model_precache 75 progs/missile.mdl
+sv.model_precache 76 progs/grenade.mdl
+sv.model_precache 77 progs/spike.mdl
+sv.model_precache 78 progs/s_spike.mdl
+sv.model_precache 79 progs/backpack.mdl
+sv.model_precache 80 progs/zom_gib.mdl
+sv.model_precache 81 progs/v_light.mdl
+sv.model_precache 82 progs/flame2.mdl
+sv.model_precache 83 progs/flame.mdl
+sv.model_precache 84 progs/zombie.mdl
+sv.model_precache 85 progs/h_zombie.mdl
+sv.sound_precache 1 weapons/r_exp3.wav
+sv.sound_precache 2 weapons/rocket1i.wav
+sv.sound_precache 3 weapons/sgun1.wav
+sv.sound_precache 4 weapons/guncock.wav
+sv.sound_precache 5 weapons/ric1.wav
+sv.sound_precache 6 weapons/ric2.wav
+sv.sound_precache 7 weapons/ric3.wav
+sv.sound_precache 8 weapons/spike2.wav
+sv.sound_precache 9 weapons/tink1.wav
+sv.sound_precache 10 weapons/grenade.wav
+sv.sound_precache 11 weapons/bounce.wav
+sv.sound_precache 12 weapons/shotgn2.wav
+sv.sound_precache 13 demon/dland2.wav
+sv.sound_precache 14 misc/h2ohit1.wav
+sv.sound_precache 15 items/itembk2.wav
+sv.sound_precache 16 player/plyrjmp8.wav
+sv.sound_precache 17 player/land.wav
+sv.sound_precache 18 player/land2.wav
+sv.sound_precache 19 player/drown1.wav
+sv.sound_precache 20 player/drown2.wav
+sv.sound_precache 21 player/gasp1.wav
+sv.sound_precache 22 player/gasp2.wav
+sv.sound_precache 23 player/h2odeath.wav
+sv.sound_precache 24 misc/talk.wav
+sv.sound_precache 25 player/teledth1.wav
+sv.sound_precache 26 misc/r_tele1.wav
+sv.sound_precache 27 misc/r_tele2.wav
+sv.sound_precache 28 misc/r_tele3.wav
+sv.sound_precache 29 misc/r_tele4.wav
+sv.sound_precache 30 misc/r_tele5.wav
+sv.sound_precache 31 weapons/lock4.wav
+sv.sound_precache 32 weapons/pkup.wav
+sv.sound_precache 33 items/armor1.wav
+sv.sound_precache 34 weapons/lhit.wav
+sv.sound_precache 35 weapons/lstart.wav
+sv.sound_precache 36 items/damage3.wav
+sv.sound_precache 37 misc/power.wav
+sv.sound_precache 38 player/gib.wav
+sv.sound_precache 39 player/udeath.wav
+sv.sound_precache 40 player/tornoff2.wav
+sv.sound_precache 41 player/pain1.wav
+sv.sound_precache 42 player/pain2.wav
+sv.sound_precache 43 player/pain3.wav
+sv.sound_precache 44 player/pain4.wav
+sv.sound_precache 45 player/pain5.wav
+sv.sound_precache 46 player/pain6.wav
+sv.sound_precache 47 player/death1.wav
+sv.sound_precache 48 player/death2.wav
+sv.sound_precache 49 player/death3.wav
+sv.sound_precache 50 player/death4.wav
+sv.sound_precache 51 player/death5.wav
+sv.sound_precache 52 weapons/ax1.wav
+sv.sound_precache 53 player/axhit1.wav
+sv.sound_precache 54 player/axhit2.wav
+sv.sound_precache 55 player/h2ojump.wav
+sv.sound_precache 56 player/slimbrn2.wav
+sv.sound_precache 57 player/inh2o.wav
+sv.sound_precache 58 player/inlava.wav
+sv.sound_precache 59 misc/outwater.wav
+sv.sound_precache 60 player/lburn1.wav
+sv.sound_precache 61 player/lburn2.wav
+sv.sound_precache 62 misc/water1.wav
+sv.sound_precache 63 misc/water2.wav
+sv.sound_precache 64 ambience/fire1.wav
+sv.sound_precache 65 ambience/hum1.wav
+sv.sound_precache 66 ambience/buzz1.wav
+sv.sound_precache 67 ambience/fl_hum1.wav
+sv.sound_precache 68 doors/medtry.wav
+sv.sound_precache 69 doors/meduse.wav
+sv.sound_precache 70 misc/null.wav
+sv.sound_precache 71 doors/stndr1.wav
+sv.sound_precache 72 doors/stndr2.wav
+sv.sound_precache 73 zombie/z_idle.wav
+sv.sound_precache 74 zombie/z_idle1.wav
+sv.sound_precache 75 zombie/z_shot1.wav
+sv.sound_precache 76 zombie/z_gib.wav
+sv.sound_precache 77 zombie/z_pain.wav
+sv.sound_precache 78 zombie/z_pain1.wav
+sv.sound_precache 79 zombie/z_fall.wav
+sv.sound_precache 80 zombie/z_miss.wav
+sv.sound_precache 81 zombie/z_hit.wav
+sv.sound_precache 82 zombie/idle_w2.wav
+sv.sound_precache 83 misc/secret.wav
+sv.sound_precache 84 ambience/drip1.wav
+sv.sound_precache 85 ambience/drone6.wav
+sv.serverflags 0
+spawnparm 17 0
+spawnparm 18 0
+spawnparm 19 0
+spawnparm 20 0
+spawnparm 21 0
+spawnparm 22 0
+spawnparm 23 0
+spawnparm 24 0
+spawnparm 25 0
+spawnparm 26 0
+spawnparm 27 0
+spawnparm 28 0
+spawnparm 29 0
+spawnparm 30 0
+spawnparm 31 0
+spawnparm 32 0
+spawnparm 33 0
+spawnparm 34 0
+spawnparm 35 0
+spawnparm 36 0
+spawnparm 37 0
+spawnparm 38 0
+spawnparm 39 0
+spawnparm 40 0
+spawnparm 41 0
+spawnparm 42 0
+spawnparm 43 0
+spawnparm 44 0
+spawnparm 45 0
+spawnparm 46 0
+spawnparm 47 0
+spawnparm 48 0
+spawnparm 49 0
+spawnparm 50 0
+spawnparm 51 0
+spawnparm 52 0
+spawnparm 53 0
+spawnparm 54 0
+spawnparm 55 0
+spawnparm 56 0
+spawnparm 57 0
+spawnparm 58 0
+spawnparm 59 0
+spawnparm 60 0
+spawnparm 61 0
+spawnparm 62 0
+spawnparm 63 0
+spawnparm 64 0
+*/
