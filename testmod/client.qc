@@ -854,10 +854,9 @@ void() PlayerJump =
 
 // player jumping sound
 	sound (self, CHAN_BODY, "player/plyrjmp8.wav", 1, ATTN_NORM);
-#ifdef NETQUAKE
 	self.flags = self.flags - FL_ONGROUND;
+	// below is where the player actually jumps. Original value 270 - Bizz
 	self.velocity_z = self.velocity_z + 270;
-#endif
 };
 
 
