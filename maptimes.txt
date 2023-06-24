@@ -1,0 +1,1 @@
+"id1/pak0.pak/maps/start.bsp" 11.1015825 11.1015825 0 0

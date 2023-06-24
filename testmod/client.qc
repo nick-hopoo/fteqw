@@ -854,8 +854,7 @@ void() PlayerJump =
 // player jumping sound
 	sound (self, CHAN_BODY, "player/plyrjmp8.wav", 1, ATTN_NORM);
 	self.flags = self.flags - FL_ONGROUND;
-	// attempt to draw puffs below feet on jump - bizz
-	TE_gunshot(self.origin);
+	
 	// below is where the player actually jumps. Original value 270 - Bizz
 	self.velocity_z = self.velocity_z + 270;
 };
@@ -1015,7 +1014,13 @@ void() PlayerPreThink =
 	
 	if (self.deadflag == DEAD_DYING)
 		return; // dying, so do nothing
-
+		//I start shitting grenades now, but i dont stop yet - bizz
+	local vector downVec;
+	downVec = '0 0 -60';
+	traceline (self.origin, self.origin+downVec, TRUE, self);
+	TE_lightning2(self, self.origin, trace_endpos);
+	PRJ_FireProjectile(self, "progs/grenade.mdl", trace_endpos, 0);
+	// end of grenade shitting (except it doesnt actually end haha) - bizz
 	if (self.button2)
 		PlayerJump ();
 	else
