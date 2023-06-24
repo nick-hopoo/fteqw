@@ -1014,13 +1014,13 @@ void() PlayerPreThink =
 	
 	if (self.deadflag == DEAD_DYING)
 		return; // dying, so do nothing
-		//I start shitting grenades now, but i dont stop yet - bizz
+		//I start shitting shadows now, but i dont stop yet - bizz
 	local vector downVec;
 	downVec = '0 0 -60';
 	traceline (self.origin, self.origin+downVec, TRUE, self);
 	TE_lightning2(self, self.origin, trace_endpos);
-	PRJ_FireProjectile(self, "progs/grenade.mdl", trace_endpos, 0);
-	// end of grenade shitting (except it doesnt actually end haha) - bizz
+	PRJ_FireProjectile(self, "progs/shadowplane.mdl", trace_endpos, 0);
+	// end of shadow shitting (except it doesnt actually end haha) - bizz
 	if (self.button2)
 		PlayerJump ();
 	else
