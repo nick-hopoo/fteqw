@@ -216,3 +216,17 @@ game testmod
 map start
 chase_active
 chase_active 1
+game testmod
+map start
+map_start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+chase_active 1
+fps
+
+map start
