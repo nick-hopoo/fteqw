@@ -69,7 +69,8 @@ void() W_FireAxe =
 
 	makevectors (self.v_angle);
 	source = self.origin + '0 0 16';
-	traceline (source, source + v_forward*64, FALSE, self);
+	// original below line was source + v_forward*64, I increased 64 to increase range - Bizz
+	traceline (source, source + v_forward*128, FALSE, self);
 	if (trace_fraction == 1.0)
 		return;
 	
@@ -88,6 +89,23 @@ void() W_FireAxe =
 		sound (self, CHAN_WEAPON, "player/axhit2.wav", 1, ATTN_NORM);
 
 		TE_gunshot(org);
+		// attempting to fling player additively toward facing angle when striking wall - Bizz
+		local vector helper;
+		helper = (self.origin - trace_endpos);
+		helper = normalize(helper);
+		local string debugString;
+		// note to self: strip the vector apart and compare X Y and Z, then only make a change
+		// to each component if the new component part is higher, we don't want to
+		// do velocity + helper * -1 * magnitude desired because it'll stack forever, so instead
+		// just send a little push.  The Z component should be additive, so you can't hook upward forever.
+		// so X and Y can be set, but Z must be added.  X and Y are compared, Z isn't ever.
+		// X and Y can be added BUT we'll have to check against some maximum 'gain speed', so
+		// we can add it, but only up to like 500 units/ps or whatever.  That way you can
+		// naturally go over max run speed for fun but you can't go to infinite crack speed
+		// by repeating the motion indefinitely.
+		dprint (ftos(helper.y));
+		self.velocity = helper * -1 * 500;
+		//end of attempt
 	}
 };
 
