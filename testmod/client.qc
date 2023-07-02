@@ -546,6 +546,9 @@ called each time a player enters a new level
 */
 void() PutClientInServer =
 {
+	//some custom variables i want to be initialized - Bizz
+	self.BIZZ_AXECLIMB = 1;
+	//end of custom variables
 	local   entity spot;
 	local float wtemp;
 
@@ -1217,6 +1220,11 @@ void() PlayerPostThink =
 		return;
 
 // check to see if player landed and play landing sound 
+	if (self.flags & FL_ONGROUND && self.BIZZ_AXECLIMB > 1)
+	{
+		self.BIZZ_AXECLIMB = 1;
+		dprint ("printit");
+	}
 	if ((self.jump_flag < -300) && (self.flags & FL_ONGROUND) )
 	{
 		if (self.watertype == CONTENT_WATER)

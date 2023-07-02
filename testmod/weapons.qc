@@ -91,6 +91,12 @@ void() W_FireAxe =
 		TE_gunshot(org);
 		// attempting to fling player additively toward facing angle when striking wall - Bizz
 		local vector helper;
+		local vector desiredHorizontal;
+		local vector currentHorizontal;
+		local float desiredMaxSpeed;
+		local float desiredY;
+		local float desiredZ;
+		desiredMaxSpeed = -1 * 500;
 		helper = (self.origin - trace_endpos);
 		helper = normalize(helper);
 		local string debugString;
@@ -103,8 +109,26 @@ void() W_FireAxe =
 		// we can add it, but only up to like 500 units/ps or whatever.  That way you can
 		// naturally go over max run speed for fun but you can't go to infinite crack speed
 		// by repeating the motion indefinitely.
-		dprint (ftos(helper.y));
-		self.velocity = helper * -1 * 500;
+		desiredHorizontal.x = helper.x;
+		desiredHorizontal.y = helper.y;
+		desiredHorizontal.z = 0;
+		currentHorizontal.x = self.velocity.x;
+		currentHorizontal.y = self.velocity.y;
+		currentHorizontal.z = 0;
+		desiredHorizontal = desiredHorizontal * desiredMaxSpeed;
+
+		if (vlen(desiredHorizontal) > vlen(currentHorizontal))
+		{
+			self.velocity.x = desiredHorizontal.x;
+			self.velocity.y = desiredHorizontal.y;
+		}
+
+		self.velocity.z = self.velocity.z + helper.z * desiredMaxSpeed / self.BIZZ_AXECLIMB;
+		if (self.BIZZ_AXECLIMB < 8)
+		{
+		self.BIZZ_AXECLIMB = self.BIZZ_AXECLIMB * 2;
+		}
+		dprint (ftos(self.BIZZ_AXECLIMB));
 		//end of attempt
 	}
 };
