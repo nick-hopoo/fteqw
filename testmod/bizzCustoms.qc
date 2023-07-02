@@ -83,3 +83,22 @@ void() ResetAxeClimbAmount =
 		self.BIZZ_AXECLIMB = 1;
 	}
 };
+
+                                                                                   
+// pog
+// BBBBBBBBBBBBBBBBB        IIIIIIIIII     ZZZZZZZZZZZZZZZZZZZ     ZZZZZZZZZZZZZZZZZZZ
+// B::::::::::::::::B       I::::::::I     Z:::::::::::::::::Z     Z:::::::::::::::::Z
+// B::::::BBBBBB:::::B      I::::::::I     Z:::::::::::::::::Z     Z:::::::::::::::::Z
+// BB:::::B     B:::::B     II::::::II     Z:::ZZZZZZZZ:::::Z      Z:::ZZZZZZZZ:::::Z 
+//   B::::B     B:::::B       I::::I       ZZZZZ     Z:::::Z       ZZZZZ     Z:::::Z  
+//   B::::B     B:::::B       I::::I               Z:::::Z                 Z:::::Z    
+//   B::::BBBBBB:::::B        I::::I              Z:::::Z                 Z:::::Z     
+//   B:::::::::::::BB         I::::I             Z:::::Z                 Z:::::Z      
+//   B::::BBBBBB:::::B        I::::I            Z:::::Z                 Z:::::Z       
+//   B::::B     B:::::B       I::::I           Z:::::Z                 Z:::::Z        
+//   B::::B     B:::::B       I::::I          Z:::::Z                 Z:::::Z         
+//   B::::B     B:::::B       I::::I       ZZZ:::::Z     ZZZZZ     ZZZ:::::Z     ZZZZZ
+// BB:::::BBBBBB::::::B     II::::::II     Z::::::ZZZZZZZZ:::Z     Z::::::ZZZZZZZZ:::Z
+// B:::::::::::::::::B      I::::::::I     Z:::::::::::::::::Z     Z:::::::::::::::::Z
+// B::::::::::::::::B       I::::::::I     Z:::::::::::::::::Z     Z:::::::::::::::::Z
+// BBBBBBBBBBBBBBBBB        IIIIIIIIII     ZZZZZZZZZZZZZZZZZZZ     ZZZZZZZZZZZZZZZZZZZ                                                                            
