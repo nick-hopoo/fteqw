@@ -1220,11 +1220,7 @@ void() PlayerPostThink =
 		return;
 
 // check to see if player landed and play landing sound 
-	if (self.flags & FL_ONGROUND && self.BIZZ_AXECLIMB > 1)
-	{
-		self.BIZZ_AXECLIMB = 1;
-		dprint ("printit");
-	}
+	ResetAxeClimbAmount ();
 	if ((self.jump_flag < -300) && (self.flags & FL_ONGROUND) )
 	{
 		if (self.watertype == CONTENT_WATER)

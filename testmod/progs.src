@@ -29,6 +29,7 @@
 #include "combat.qc"
 #include "items.qc"
 #include "proj.qc"
+#include "bizzCustoms.qc"
 #include "weapons.qc"
 #include "world.qc"
 #include "client.qc"
@@ -65,4 +66,5 @@
 
 #ifdef REPLACEMENTS
 #include "replace.qc"
+
 #endif 

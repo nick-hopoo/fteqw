@@ -1,11 +1,11 @@
-// Here is my fancy little file where I sort of interject other files for my custom files for cleanliness.
+// Here is my fancy little crap where I sort of interject other files for my custom files for cleanliness.
 
 
 // ================
 // W_FireAxe, except it hooks.
 // W_HookAxe
 // ================
-void() W_FireAxe =
+void() W_HookAxe =
 {
 	local   vector  source;
 	local   vector  org;
@@ -73,5 +73,13 @@ void() W_FireAxe =
 		}
 		dprint (ftos(self.BIZZ_AXECLIMB));
 		//end of attempt
+	}
+};
+
+void() ResetAxeClimbAmount =
+{
+	if (self.flags & FL_ONGROUND && self.BIZZ_AXECLIMB > 1)
+	{
+		self.BIZZ_AXECLIMB = 1;
 	}
 };
