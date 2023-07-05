@@ -191,7 +191,6 @@ void(float() touchfunc) PRJ_SetTouch =
 {
 	newmis.proj_touch = touchfunc;
 };
-
 // main spawning function
 void(entity parent, string modl, vector org, vector vel, INTEGER effect, INTEGER damg, INTEGER damgmod, float expiretime) PRJ_FireProjectile =
 {
@@ -211,10 +210,13 @@ void(entity parent, string modl, vector org, vector vel, INTEGER effect, INTEGER
 
 	newmis.think = _PRJ_Expire;
 	newmis.nextthink = time + expiretime;
+
 	
 	newmis.angles = vectoangles(newmis.velocity);
 
 	setmodel (newmis, modl);
 	setsize (newmis, VEC_ORIGIN, VEC_ORIGIN);             
 	setorigin (newmis, org);
+	
+	//
 };

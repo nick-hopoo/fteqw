@@ -1018,11 +1018,11 @@ void() PlayerPreThink =
 	if (self.deadflag == DEAD_DYING)
 		return; // dying, so do nothing
 		//I start shitting shadows now, but i dont stop yet - bizz
-	local vector downVec;
-	downVec = '0 0 -600';
-	traceline (self.origin, self.origin+downVec, TRUE, self);
-	TE_lightning2(self, self.origin, trace_endpos);
-	PRJ_FireProjectile(self, "progs/shadowplane.mdl", trace_endpos, 0, 0, 0, 0, 0.05);
+	// local vector downVec;
+	// downVec = '0 0 -600';
+	// traceline (self.origin, self.origin+downVec, TRUE, self);
+	// TE_lightning2(self, self.origin, trace_endpos);
+	// PRJ_FireProjectile(self, "progs/shadowplane.mdl", trace_endpos, 0, 0, 0, 0, 0.05);
 	// end of shadow shitting (except it doesnt actually end haha) - bizz
 	if (self.button2)
 		PlayerJump ();

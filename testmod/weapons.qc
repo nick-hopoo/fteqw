@@ -243,6 +243,10 @@ void(float shotcount, vector dir, vector spread, INTEGER mod) FireBullets =
 
 	traceline (src, src + dir*2048, FALSE, self);
 	puff_org = trace_endpos - dir*4;
+		//testing how absmin and absmax etc work
+		//(entity parent, string modl, vector org, vector vel, INTEGER effect, INTEGER damg, INTEGER damgmod, float expiretime)
+		PRJ_FireProjectile(self, "progs/grenade.mdl", self.absmin_z, 0, PE_EXPLOSIONGROUND, 0, 0, 2.5);
+		//end of test
 
 	while (shotcount > 0)
 	{
@@ -460,6 +464,10 @@ W_FireGrenade
 */
 void() W_FireGrenade =
 {
+	//intercept with BounceBomb - Bizz
+	W_FireBounceBomb ();
+	return;
+	// end of intercept
 	local vector vel;
 
 	if (deathmatch != 4)
