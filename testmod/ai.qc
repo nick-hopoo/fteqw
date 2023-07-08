@@ -33,14 +33,18 @@ walkmove(angle, speed) primitive is all or nothing
 entity	sight_entity;
 float	sight_entity_time;
 
-float(float v) anglemod =
-{
-	while (v >= 360)
-		v = v - 360;
-	while (v < 0)
-		v = v + 360;
-	return v;
-};
+// I pushed this up the change into my big math QC file with sine and cosine and stuff, so its illegal here atm - bizz
+
+// float(float v) anglemod =
+// {
+// 	while (v >= 360)
+// 		v = v - 360;
+// 	while (v < 0)
+// 		v = v + 360;
+// 	return v;
+// };
+
+// end of illegal code.
 
 /*
 ==============================================================================

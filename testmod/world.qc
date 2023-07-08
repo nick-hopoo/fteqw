@@ -292,6 +292,11 @@ void() worldspawn =
 
 	precache_model ("progs/v_light.mdl");
 	
+	//some extra models - bizz
+
+	precache_model ("progs/movecube");
+
+	//end of custom prog models from me
 
 //
 // Setup light animation tables. 'a' is total darkness, 'z' is maxbright.

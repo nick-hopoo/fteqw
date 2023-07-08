@@ -71,7 +71,7 @@ void() W_HookAxe =
 		{
 		self.BIZZ_AXECLIMB = self.BIZZ_AXECLIMB * 2;
 		}
-		dprint (ftos(self.BIZZ_AXECLIMB));
+		//dprint (ftos(self.BIZZ_AXECLIMB));
 		//end of attempt
 	}
 };
