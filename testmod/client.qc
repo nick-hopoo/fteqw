@@ -1247,6 +1247,7 @@ void() PlayerPostThink =
 			self.health = self.health - 1;
 		self.healdecay = time + 1;
 	}
+
 };
 
 

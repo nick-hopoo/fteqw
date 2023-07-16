@@ -371,6 +371,7 @@ float   TE_LIGHTNINGBLOOD = 13;
 //Bizz custom tracked variables
 .float BIZZ_AXECLIMB;
 
+
 // sound channels
 // channel 0 never willingly overrides
 // other channels (1-7) allways override a playing sound on that channel

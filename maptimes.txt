@@ -1,1 +1,2 @@
+"id1/pak1.pak/maps/e2m1.bsp" 25.6896305 25.6896305 1 0
 "id1/pak0.pak/maps/start.bsp" 11.1015825 11.1015825 0 0

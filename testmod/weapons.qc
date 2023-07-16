@@ -243,10 +243,6 @@ void(float shotcount, vector dir, vector spread, INTEGER mod) FireBullets =
 
 	traceline (src, src + dir*2048, FALSE, self);
 	puff_org = trace_endpos - dir*4;
-		//testing how absmin and absmax etc work
-		//(entity parent, string modl, vector org, vector vel, INTEGER effect, INTEGER damg, INTEGER damgmod, float expiretime)
-		PRJ_FireProjectile(self, "progs/grenade.mdl", self.absmin_z, 0, PE_EXPLOSIONGROUND, 0, 0, 2.5);
-		//end of test
 
 	while (shotcount > 0)
 	{
@@ -615,7 +611,7 @@ void() W_UpdateWeapon =
 		self.ammo_type = AT_NAILS;
 		break;
 	case IT_GRENADE_LAUNCHER:
-		self.weaponmodel = "progs/v_rock.mdl";
+		self.weaponmodel = "progs/v_holdbox.mdl";
 		self.items = self.items | IT_ROCKETS;
 		self.ammo_type = AT_ROCKETS;
 		break;
@@ -769,6 +765,9 @@ void() W_Attack =
 			player_nail2();
 		break;		
 	case IT_GRENADE_LAUNCHER:
+		self.weaponframe = 2;
+		player_rocket1();
+		break;
 	case IT_ROCKET_LAUNCHER:
 		self.weaponframe = 1;
 		muzzleflash();
@@ -830,8 +829,8 @@ void() W_Attack =
 		r = 0.1;
 		break;
 	case IT_GRENADE_LAUNCHER:
-		W_FireGrenade();
-		r = 0.6;
+		W_FireBounceBomb();
+		r = 0.8;
 		break;
 	case IT_ROCKET_LAUNCHER:
 		W_FireRocket();
