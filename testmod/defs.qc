@@ -306,6 +306,8 @@ float   IT_GRENADE_LAUNCHER             = 16;
 float   IT_ROCKET_LAUNCHER              = 32;
 float   IT_LIGHTNING                    = 64;
 float   IT_EXTRA_WEAPON                 = 128;
+// custom bIZZ
+float   IT_CRATES                 = 8388608;
 
 float   IT_SHELLS                               = 256;
 float   IT_NAILS                                = 512;
@@ -370,6 +372,9 @@ float   TE_LIGHTNINGBLOOD = 13;
 
 //Bizz custom tracked variables
 .float BIZZ_AXECLIMB;
+//bizz below this is custom, crates are custom.  Normally you can only have the one - Bizz
+.float			AMMO_CRATES;
+// end of custom ammo
 
 
 // sound channels
@@ -483,6 +488,7 @@ entity shub; // boss entity
 .INTEGER ammo_nails_real;	// real nails count
 .INTEGER ammo_rockets_real;	// real rockets count
 .INTEGER ammo_cells_real;	// real cells count
+.INTEGER ammo_crates_real;	// real crates count BIZZ custom
 
 // Zoid Additions
 noref .float		maxspeed;		// Used to set Maxspeed on a player
@@ -557,6 +563,9 @@ enum {
 	AT_SHELLS,
 	AT_NAILS,
 	AT_ROCKETS,
+	// custom BIZZ
+	AT_CRATES,
+	// custom
 	AT_CELLS
 };
 

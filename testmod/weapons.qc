@@ -43,6 +43,9 @@ void(entity ent) W_UpdateAmmoCounts =
 	case AT_ROCKETS:
 		ent.currentammo = ent.ammo_rockets_real;
 		break;
+	case AT_CRATES:
+		ent.currentammo = ent.ammo_crates_real;
+		break;
 	case AT_CELLS:
 		ent.currentammo = ent.ammo_cells_real;
 		break;
@@ -461,8 +464,8 @@ W_FireGrenade
 void() W_FireGrenade =
 {
 	//intercept with BounceBomb - Bizz
-	W_FireBounceBomb ();
-	return;
+	// W_FireBounceBomb ();
+	// return;
 	// end of intercept
 	local vector vel;
 
@@ -568,6 +571,8 @@ BOOL(float wep) W_HasAmmo =
 		return self.ammo_nails_real >= 1;
 	case IT_SUPER_NAILGUN:
 		return self.ammo_nails_real >= 2;
+	case IT_CRATES:
+	return self.ammo_crates_real >= 1;
 	case IT_GRENADE_LAUNCHER:
 	case IT_ROCKET_LAUNCHER:
 		return self.ammo_rockets_real >= 1;
@@ -610,11 +615,16 @@ void() W_UpdateWeapon =
 		self.items = self.items | IT_NAILS;
 		self.ammo_type = AT_NAILS;
 		break;
-	case IT_GRENADE_LAUNCHER:
+	case IT_CRATES:
 		self.weaponmodel = "progs/v_holdbox.mdl";
-		self.items = self.items | IT_ROCKETS;
-		self.ammo_type = AT_ROCKETS;
+		self.items = self.items | IT_CRATES;
+		self.ammo_type = AT_CRATES;
 		break;
+	case IT_GRENADE_LAUNCHER:
+	self.weaponmodel = "progs/v_rock.mdl";
+	self.items = self.items | IT_ROCKETS;
+	self.ammo_type = AT_ROCKETS;
+	break;
 	case IT_ROCKET_LAUNCHER:
 		self.weaponmodel = "progs/v_rock2.mdl";
 		self.items = self.items | IT_ROCKETS;
@@ -647,6 +657,7 @@ void(float weap) W_WeaponSwitch =
 
 float() W_BestWeapon =
 {
+	// BIZZ - there may be a bug here related to wanting to auto-switch to crates while underwater instead of Lightning gun or whatever...?
 	float fl;
 
 	if (self.waterlevel <= 1)
@@ -662,6 +673,9 @@ float() W_BestWeapon =
 		// best weapon order
 		switch (fl)
 		{
+		case IT_CRATES:
+			fl = IT_LIGHTNING;
+			break;
 		case IT_LIGHTNING:
 			fl = IT_SUPER_NAILGUN;
 			break;
@@ -829,8 +843,12 @@ void() W_Attack =
 		r = 0.1;
 		break;
 	case IT_GRENADE_LAUNCHER:
+		W_FireGrenade();
+		r = 0.6;
+		break;
+	case IT_CRATES:
 		W_FireBounceBomb();
-		r = 0.8;
+		r = 0.5;
 		break;
 	case IT_ROCKET_LAUNCHER:
 		W_FireRocket();
@@ -886,6 +904,9 @@ void() W_ChangeWeapon =
 	case 8:
 		fl = IT_LIGHTNING;
 		break;
+	case 9:
+		fl = IT_CRATES;
+		break;
 	}
 	
 	
@@ -918,6 +939,7 @@ void() CheatCommand =
 		return;
 
 	self.ammo_rockets_real = 100;
+	self.ammo_crates_real = 1;
 	self.ammo_nails_real = 200;
 	self.ammo_shells_real = 100;
 	self.ammo_cells_real = 100;
@@ -927,11 +949,12 @@ void() CheatCommand =
 		IT_NAILGUN |
 		IT_SUPER_NAILGUN |
 		IT_GRENADE_LAUNCHER |
+		IT_CRATES |
 		IT_ROCKET_LAUNCHER |
 		IT_LIGHTNING |
 		IT_KEY1 | IT_KEY2;
 
-	W_WeaponSwitch (IT_ROCKET_LAUNCHER);
+	W_WeaponSwitch (IT_CRATES);
 };
 
 /*

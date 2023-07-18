@@ -10,6 +10,14 @@
 // 	remove(self);
 // };
 
+void() AutoSwitchToCratesOnAxeHit =
+{
+	self.weapon = IT_CRATES;
+	self.weaponmodel = "progs/v_holdbox.mdl";
+	self.items = self.items | IT_CRATES;
+	self.ammo_type = AT_CRATES;
+};
+
 void() WaitForPlayerExit =
 {
 	local float StopThinking = 0;
@@ -79,7 +87,7 @@ void(entity parent, string modl, vector org, float oldXAng, float oldYAng, float
 	newmis = spawn ();
 	newmis.movetype = MOVETYPE_STEP;
 	newmis.solid = SOLID_BBOX;
-//	newmis.classname = class;
+	newmis.classname = "bizzCrate";
 
 	setmodel (newmis, modl);
 	//set angle to nearest 90 so it can always match hitbox but also be near its last visual rotation on landing
@@ -246,7 +254,7 @@ void(entity parent, string modl, vector org, vector vel, INTEGER effect, INTEGER
 	newmis.owner = parent;
 	newmis.movetype = MOVETYPE_FLYMISSILE;
 	newmis.solid = SOLID_SLIDEBOX;
-//	newmis.classname = class;
+	newmis.classname = "bizzCrate";
 	newmis.velocity = vel;
 
 	newmis.damage_direct = damg;
@@ -281,8 +289,9 @@ void() W_FireBounceBomb =
 	// all the deathmatch code is probably worthless but I won't remove it.
 	if (deathmatch != 4)
 	{
-		self.ammo_rockets_real -= 1;
+		self.ammo_crates_real -= 1;
 		W_UpdateAmmoCounts(self);
+		dprint(ftos(self.ammo_crates_real));
 	}
 	
 	sound (self, CHAN_WEAPON, "weapons/grenade.wav", 1, ATTN_NORM);
