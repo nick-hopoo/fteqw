@@ -10,12 +10,16 @@
 // 	remove(self);
 // };
 
-void() AutoSwitchToCratesOnAxeHit =
+void(entity struckCrate) AutoSwitchToCratesOnAxeHit =
 {
+	remove(struckCrate);
+	self.ammo_crates_real = 1;
+	W_UpdateAmmoCounts(self);
 	self.weapon = IT_CRATES;
 	self.weaponmodel = "progs/v_holdbox.mdl";
 	self.items = self.items | IT_CRATES;
 	self.ammo_type = AT_CRATES;
+	self.weaponframe = 0;
 };
 
 void() WaitForPlayerExit =
@@ -291,7 +295,6 @@ void() W_FireBounceBomb =
 	{
 		self.ammo_crates_real -= 1;
 		W_UpdateAmmoCounts(self);
-		dprint(ftos(self.ammo_crates_real));
 	}
 	
 	sound (self, CHAN_WEAPON, "weapons/grenade.wav", 1, ATTN_NORM);

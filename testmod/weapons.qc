@@ -58,6 +58,7 @@ void(entity ent) W_UpdateAmmoCounts =
 	ent.ammo_nails = ent.ammo_nails_real;
 	ent.ammo_rockets = ent.ammo_rockets_real;
 	ent.ammo_cells = ent.ammo_cells_real;
+	ent.AMMO_CRATES = ent.ammo_crates_real;
 };
 
 /*
@@ -659,8 +660,11 @@ float() W_BestWeapon =
 {
 	// BIZZ - there may be a bug here related to wanting to auto-switch to crates while underwater instead of Lightning gun or whatever...?
 	float fl;
-
-	if (self.waterlevel <= 1)
+	if (self.ammo_crates_real >= 1)
+	{
+		fl = IT_CRATES;
+	}
+	else if (self.waterlevel <= 1)
 		fl = IT_LIGHTNING;
 	else
 		fl = IT_SUPER_NAILGUN;

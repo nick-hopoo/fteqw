@@ -27,6 +27,13 @@ void() W_HookAxe =
 		else
 			T_Damage (trace_ent, self, self, 20, MOD_AXE);
 	}
+	else if (trace_ent.classname == "bizzCrate")
+	{
+		sound (self, CHAN_WEAPON, "player/axhit2.wav", 1, ATTN_NORM);
+		TE_gunshot(org);
+		AutoSwitchToCratesOnAxeHit(trace_ent);
+		return;
+	}
 	else
 	{       // hit wall
 		sound (self, CHAN_WEAPON, "player/axhit2.wav", 1, ATTN_NORM);
