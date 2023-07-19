@@ -44,3 +44,6 @@ map start
 impulse 9
 map start
 impulse 9
+game testmod
+map start
+impulse 9

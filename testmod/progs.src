@@ -24,7 +24,7 @@
 #include "defs.qc"
 #include "subs.qc"
 #include "engine.qc"
-#include "bizzSineCosine.qc"
+#include "bizzMath.qc"
 #include "effects.qc"
 #include "obituary.qc"
 #include "combat.qc"
