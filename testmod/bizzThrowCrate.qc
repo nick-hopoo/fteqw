@@ -287,7 +287,7 @@ void(entity parent, string modl, vector org, vector vel, INTEGER effect, INTEGER
 };
 
 //w_firegrenade except it does no damage and only pushes you.
-void() W_FireBounceBomb =
+void() W_FireCrate =
 {
 	local vector vel;
 	// all the deathmatch code is probably worthless but I won't remove it.

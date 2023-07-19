@@ -464,10 +464,6 @@ W_FireGrenade
 */
 void() W_FireGrenade =
 {
-	//intercept with BounceBomb - Bizz
-	// W_FireBounceBomb ();
-	// return;
-	// end of intercept
 	local vector vel;
 
 	if (deathmatch != 4)
@@ -851,7 +847,7 @@ void() W_Attack =
 		r = 0.6;
 		break;
 	case IT_CRATES:
-		W_FireBounceBomb();
+		W_FireCrate();
 		r = 0.5;
 		break;
 	case IT_ROCKET_LAUNCHER:

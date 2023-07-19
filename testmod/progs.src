@@ -30,7 +30,7 @@
 #include "combat.qc"
 #include "items.qc"
 #include "proj.qc"
-#include "bizzBounceBomb.qc"
+#include "bizzThrowCrate.qc"
 #include "bizzHookAxe.qc"
 #include "weapons.qc"
 #include "world.qc"
