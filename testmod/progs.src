@@ -32,6 +32,7 @@
 #include "proj.qc"
 #include "bizzThrowCrate.qc"
 #include "bizzHookAxe.qc"
+#include "bizzShadow.qc"
 #include "weapons.qc"
 #include "world.qc"
 #include "client.qc"

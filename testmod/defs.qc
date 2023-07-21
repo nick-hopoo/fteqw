@@ -372,6 +372,7 @@ float   TE_LIGHTNINGBLOOD = 13;
 
 //Bizz custom tracked variables
 .float BIZZ_AXECLIMB;
+.entity BIZZ_SHADOW;
 //bizz below this is custom, crates are custom.  Normally you can only have the one - Bizz
 .float			AMMO_CRATES;
 // end of custom ammo

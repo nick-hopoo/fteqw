@@ -651,6 +651,10 @@ void() PutClientInServer =
 	
 	self.view_ofs = '0 0 22';
 
+	//bizz, give them shadow
+	createShadow(self);
+	//end
+
 // Mod - Xian (May.20.97)
 // Bug where player would have velocity from their last kill
 
@@ -1221,6 +1225,7 @@ void() PlayerPostThink =
 
 // check to see if player landed and play landing sound 
 	ResetAxeClimbAmount ();
+	
 	if ((self.jump_flag < -300) && (self.flags & FL_ONGROUND) )
 	{
 		if (self.watertype == CONTENT_WATER)
@@ -1247,6 +1252,13 @@ void() PlayerPostThink =
 			self.health = self.health - 1;
 		self.healdecay = time + 1;
 	}
+
+	//update shadow if needed
+	if (self.BIZZ_SHADOW.classname == "bizzShadow")
+	{
+		updateShadow(self.BIZZ_SHADOW);
+	}
+	
 
 };
 
