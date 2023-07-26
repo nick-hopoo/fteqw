@@ -296,6 +296,7 @@ void() worldspawn =
 	//some extra models - bizz
 
 	precache_model ("progs/movecube");
+	precache_model ("progs/shadowplane.mdl");
 
 	//end of custom prog models from me
 

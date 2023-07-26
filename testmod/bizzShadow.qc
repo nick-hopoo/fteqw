@@ -1,10 +1,33 @@
 // its the code for the shadow that follows under you when you jump
 // I should utilize the vore code potentially to get it to 'follow' you though I think
 //I could also just use the think function and update it rapidly enough to beneath u.
+
+$cd testmod/progs/shadowplane
+$frame Key1 Key2 Key3 Key4 Key5 Key6 Key7 Key8 Key9 Key10
+
+void()  shadow_Key1 =[        $Key1,       shadow_Key1   ] {};
+void( ) shadow_Key2  =[      $Key2, shadow_Key3 ] {};
+void( ) shadow_Key3  =[      $Key3, shadow_Key4 ] {};
+void( ) shadow_Key4  =[      $Key4, shadow_Key5 ] {};
+void( ) shadow_Key5  =[      $Key5, shadow_Key6 ] {};
+void( ) shadow_Key6  =[      $Key6, shadow_Key7 ] {};
+void( ) shadow_Key7  =[      $Key7, shadow_Key8 ] {};
+void( ) shadow_Key8  =[      $Key8, shadow_Key9 ] {};
+void( ) shadow_Key9  =[      $Key9, shadow_Key9 ] {};
+void() shadow_Key10  =[      $Key10, shadow_null ] {};
+
+void() shadow_null =
+{
+    return;
+};
+
 void(entity shadow)updateShadow =
 {
+    local float framesRangeDesired;
+    local float n;
 	local vector source = '0 0 1';
-	traceline (self.origin, self.origin + source*-256, TRUE, self);
+    local float distanceToMeasure = 256;
+	traceline (self.origin, self.origin + source*-1*distanceToMeasure, TRUE, self);
     local float distanceBelow = self.origin_z - trace_endpos_z;
     if (self.flags & FL_ONGROUND)
     {
@@ -19,6 +42,27 @@ void(entity shadow)updateShadow =
         local vector org = trace_endpos;
         org_z = org_z + 5;
         setorigin (shadow, org);
+        // old bad iterative shadow size check
+        // while (trace_fraction < n*distanceToMeasure / distanceToMeasure && n > 0)
+        // {
+        //     shadow.frame = iterativeShadowSize;
+        //     n = n - 0.1;
+        //     iterativeShadowSize ++;
+        // }
+        local float scaleUp = 0.2;
+        if (trace_fraction < scaleUp)
+        {
+            framesRangeDesired = 5;
+            n = rint(trace_fraction * 1/scaleUp * framesRangeDesired);
+        }
+        else
+        {
+            //get the shadow size out of the X frames we care about because later ones are too big
+            framesRangeDesired = 5;
+            //invert to get big to small instead of small to big
+            n = framesRangeDesired - rint(trace_fraction * framesRangeDesired);
+        }
+        shadow.frame = n;
     }
     else
     {
@@ -28,10 +72,17 @@ void(entity shadow)updateShadow =
     
 };
 
+void(float size)shadowSize =
+{
+    shadow_Key9();
+    return;
+};
+
 void(entity player)createShadow = 
 {
     if (player.BIZZ_SHADOW.classname != "bizzShadow")
     {
+        
         local vector source = '0 0 1';
 	    traceline (self.origin, self.origin + source*-256, TRUE, self);
         if (trace_fraction != 1)
@@ -49,6 +100,7 @@ void(entity player)createShadow =
             org_z = org_z + 5;
             setorigin (newmis, org);
             player.BIZZ_SHADOW = newmis;
+            
         }
         
     }
