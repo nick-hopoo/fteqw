@@ -39,7 +39,8 @@ enum {
 	MOD_FISH,
 	MOD_TARBABY,
 	MOD_ZOMBIE,
-	MOD_CHTHON
+	MOD_CHTHON,
+	MOD_SLOWGUN
 };
 
 void(string targ, INTEGER mod) SuicideMessage =
@@ -121,6 +122,11 @@ void(string targ, string attacker, INTEGER mod) KillMessage =
 	case MOD_SPIKE:
 		s = targ;
 		t = " was nailed by ";
+		u = attacker;
+		break;
+	case MOD_SLOWGUN:
+		s = targ;
+		t = " was technic'd by ";
 		u = attacker;
 		break;
 	case MOD_SUPERSPIKE:
@@ -243,6 +249,10 @@ void(string targ, INTEGER mod) WorldKillMessage =
 	case MOD_SUPERSPIKE:
 		s = targ;
 		t = " was spiked";
+		break;
+	case MOD_SLOWGUN:
+		s = targ;
+		t = " was technic'd, nerd.";
 		break;
 	case MOD_SQUISH:
 		s = targ;

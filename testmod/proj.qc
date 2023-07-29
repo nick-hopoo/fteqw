@@ -1,4 +1,8 @@
 
+//bizz custom shit i need
+void(entity victim)slowgunEffect;
+//end custom shit bizz
+
 // Generic projectile spawning code (PRJ) ---
 // projectile effect enumerator
 enum {
@@ -11,7 +15,8 @@ enum {
 	PE_EXPLOSION,
 	PE_EXPLOSIONGROUND,
 	PE_LASER,
-	PE_ZOMBIEGIB
+	PE_ZOMBIEGIB,
+	PE_SLOWGUN,
 };
 
 // functions used only by this QC file
@@ -92,6 +97,13 @@ void() _PRJ_Touch =
 			spawn_touchblood (self.damage_direct);
 		else if (other != self) // didn't expire
 			TE_spike(self.origin);
+		break;
+	case PE_SLOWGUN:
+		if (ignore != self) // hit something
+			spawn_touchblood (self.damage_direct);
+		else if (other != self) // didn't expire
+			TE_spike(self.origin);
+			slowgunEffect(other);
 		break;
 	case PE_SUPERSPIKE:
 		if (ignore != self) // hit something

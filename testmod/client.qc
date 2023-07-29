@@ -1,3 +1,7 @@
+//bizz need some custom shit written elsewhere
+
+// end of custom bizz
+
 
 // prototypes
 void () W_WeaponFrame;
@@ -548,6 +552,7 @@ void() PutClientInServer =
 {
 	//some custom variables i want to be initialized - Bizz
 	self.BIZZ_AXECLIMB = 1;
+	self.bizz_slowgunafflictiontimer = 0;
 	//end of custom variables
 	local   entity spot;
 	local float wtemp;
@@ -1021,13 +1026,6 @@ void() PlayerPreThink =
 	
 	if (self.deadflag == DEAD_DYING)
 		return; // dying, so do nothing
-		//I start shitting shadows now, but i dont stop yet - bizz
-	// local vector downVec;
-	// downVec = '0 0 -600';
-	// traceline (self.origin, self.origin+downVec, TRUE, self);
-	// TE_lightning2(self, self.origin, trace_endpos);
-	// PRJ_FireProjectile(self, "progs/shadowplane.mdl", trace_endpos, 0, 0, 0, 0, 0.05);
-	// end of shadow shitting (except it doesnt actually end haha) - bizz
 	if (self.button2)
 		PlayerJump ();
 	else
@@ -1037,6 +1035,36 @@ void() PlayerPreThink =
 	{
 		W_WeaponSwitch (W_BestWeapon ());
 	}
+
+	//
+	//do the stupid slowgun affliction bizz
+	if (self.bizz_slowgunafflictiontimer > 0 && self.bizz_slowgunvictimpoppedup == 0)
+	{
+		self.origin_z = self.origin_z + 5;
+		self.velocity = self.bizz_slowgunvictimangle * 10;
+		self.bizz_slowgunafflictiontimer --;
+		self.bizz_slowgunvictimpoppedup = 1;
+	}
+	else if (self.bizz_slowgunafflictiontimer > 0)
+	{
+		if (vlen(self.velocity) < vlen(self.bizz_slowgunvictimangle) * 10 / 10)
+		{
+			self.bizz_slowgunafflictiontimer = 0;
+			T_Damage (self, world, world, 50, MOD_SLOWGUN); 
+			sound (self, CHAN_VOICE, "player/land2.wav", 1, ATTN_NORM);
+		}
+		else
+		{
+			self.velocity = self.bizz_slowgunvictimangle * 10;
+			self.bizz_slowgunafflictiontimer --;
+		}
+		
+	}
+	else if (self.bizz_slowgunafflictiontimer == 0 && self.bizz_slowgunvictimpoppedup == 1)
+	{
+		self.bizz_slowgunvictimpoppedup = 0;
+	}
+	// end slowgun affliction -bizz
 };
 	
 /*
@@ -1258,6 +1286,9 @@ void() PlayerPostThink =
 	{
 		updateShadow(self.BIZZ_SHADOW);
 	}
+
+	
+	
 	
 
 };

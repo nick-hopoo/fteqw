@@ -498,6 +498,8 @@ void() W_FireGrenade =
 //=============================================================================
 void(float ox) W_FireSpikes =
 {
+	W_FireSlowGun();
+	return;
 	if (self.ammo_nails_real < 1)
 	{
 		W_WeaponSwitch (W_BestWeapon ());
@@ -935,8 +937,8 @@ CheatCommand
 */
 void() CheatCommand =
 {
-      if (deathmatch || coop)
-		return;
+    //   if (deathmatch || coop)
+	// 	return;
 
 	self.ammo_rockets_real = 100;
 	self.ammo_crates_real = 1;

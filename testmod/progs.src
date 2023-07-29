@@ -31,6 +31,7 @@
 #include "items.qc"
 #include "proj.qc"
 #include "bizzThrowCrate.qc"
+#include "slowgun.qc"
 #include "bizzHookAxe.qc"
 #include "bizzShadow.qc"
 #include "weapons.qc"

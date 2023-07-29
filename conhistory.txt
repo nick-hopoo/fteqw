@@ -1,243 +1,54 @@
-impulse 9
+noclip
 map start
-impulse 9
+noclip
 map start
-impulse 9
+noclip
 map start
-impulse 9
+noclip
 map start
-impulse 9
+noclip
 map start
-impulse 9
 map start
-impulse 9
 map start
-impulse 9
-impulse 9
-impulse 9
 map start
-impulse 9
 map start
-impulse 9
-mlook
-+mlook
-impulse 9
-impulse 9
-impulse 9
-
-+mlook
 map start
-+mlook
-impulse 9
-impulse 9
 map start
-impulse 9
 map start
-impulse 9
 map start
-impulse 9
 map start
-impulse 9
 map start
-impulse 9
 map start
-impulse 9
 map start
-impulse 9
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
+map start
 game testmod
-map start
-impulse 9
-game testmod
-map start
-impulse 9
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-impulse 9
-impulse 9
-map start
-impulse 9
-map start
-impulse 9
-map start
-impulse 9
-map start
-impulse 9
-map start
-impulse 9
-map start
-impulse 9
-map start
-impulse 9
-map start
-impulse 9
-map start
-impulse 9
-impulse 9
-map start
-impulse 9
-game testmod
-chase_active 1
-map start
-map start
-map start
-map start
-map start
-map start
-noclip
-map start
-map start
-map start
-map start
-noclip
-noclip
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-wqf
-wqf
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
+/map 2fort_valve
 noclip
 noclip
 noclip
-noclip
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-noclip
-noclip
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-chase_active 0
-game testmod
-map start
-chase_actve 1
-chase_active 1
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
-map start
+waterfog
+waterfog 1
+waterfog 0
+waterfog .5
+waterfog 0
+/waterfog .3 .3 .3 .5
+/waterfog .3 .3 .3 .5 .5
+waterfog .3 .3 .3 .5 .5
+waterfog .3 .3 .3 .5 .5 .5
+waterfog 0.3 0.3 0.3 0.5

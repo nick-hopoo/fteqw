@@ -369,9 +369,13 @@ float   TE_LAVASPLASH   = 10;
 float   TE_TELEPORT             = 11;
 float   TE_BLOOD                = 12;
 float   TE_LIGHTNINGBLOOD = 13;
+float   TE_SLOWGUN = 13;
 
 //Bizz custom tracked variables
 .float BIZZ_AXECLIMB;
+.float bizz_slowgunafflictiontimer;
+.vector bizz_slowgunvictimangle;
+.float bizz_slowgunvictimpoppedup;
 .entity BIZZ_SHADOW;
 //bizz below this is custom, crates are custom.  Normally you can only have the one - Bizz
 .float			AMMO_CRATES;

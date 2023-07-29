@@ -1,5 +1,5 @@
 25000
-Introduction___________________________2023-07-18_03:48:38
+_______________________________________2023-07-28_22:41:56
 1
 Player
 {
@@ -69,7 +69,7 @@ Player
 	parm63 0x0 //0
 	parm_string ""
 }
-\maxclients\1\maxspectators\8\hostname\unnamed\map\start\mapname\start\skill\1
+\maxclients\1\maxspectators\8\hostname\unnamed\map\2fort_valve\mapname\2fort_valve\skill\1
 
 {
 skill			"1"
@@ -95,5 +95,5 @@ set nextserver		""
 }
 {
 }
-start
+2fort_valve
 0
