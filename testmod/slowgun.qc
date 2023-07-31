@@ -53,14 +53,62 @@ void(float ox) W_FireSlowGun =
     
 };
 
+void () slowgunAffliction =
+{
+    //do the stupid slowgun affliction bizz
+        if (self.owner.bizz_slowgunafflictiontimer > 0 && self.owner.bizz_slowgunvictimpoppedup == 0)
+        {
+            self.owner.origin_z = self.owner.origin_z + 5;
+            self.owner.velocity = self.owner.bizz_slowgunvictimangle * 10;
+            self.owner.bizz_slowgunafflictiontimer = self.owner.bizz_slowgunafflictiontimer - 1;
+            // test that this numberactually goes down vvvvv
+            dprint (ftos(self.owner.bizz_slowgunafflictiontimer));
+            self.owner.bizz_slowgunvictimpoppedup = 1;
+        }
+        else if (self.owner.bizz_slowgunafflictiontimer > 0)
+        {
+            if (vlen(self.owner.velocity) < vlen(self.owner.bizz_slowgunvictimangle) * 10 / 10)
+            {
+                self.owner.bizz_slowgunafflictiontimer = 0;
+                T_Damage (self.owner, world, world, 50, MOD_SLOWGUN); 
+                sound (self.owner, CHAN_VOICE, "player/land2.wav", 1, ATTN_NORM);
+            }
+            else
+            {
+                self.owner.velocity = self.owner.bizz_slowgunvictimangle * 10;
+                self.owner.bizz_slowgunafflictiontimer --;
+                // test that this numberactually goes down vvvvv
+                dprint (ftos(self.owner.bizz_slowgunafflictiontimer));
+            }
+            
+        }
+        else if (self.owner.bizz_slowgunafflictiontimer == 0 && self.owner.bizz_slowgunvictimpoppedup == 1)
+        {
+            self.owner.bizz_slowgunvictimpoppedup = 0;
+            remove(self);
+        }
+        self.nextthink = time + 0.1;
+        
+
+    //end affliction
+};
+
+void (entity victim) createSlowgunTimer = 
+{
+    local entity slowguntimer;
+
+    slowguntimer = spawn();
+    slowguntimer.owner = victim;
+	slowguntimer.nextthink = time + 0.1;
+	slowguntimer.think = slowgunAffliction;
+}
+
 void (entity victim) slowgunEffect =
 {
     dprint("woo");
-    victim.bizz_slowgunafflictiontimer = 60 * 5;
+    //the time below has to respect the think step's speed to get 'seconds'.  We current are thinking at 0.1 thinks per second, so *10
+    victim.bizz_slowgunafflictiontimer = 5 * 10;
     victim.bizz_slowgunvictimangle = self.velocity;
-};
-
-void (entity slowBullet) slowgunStartBounce =
-{
+    createSlowgunTimer(victim);
 };
 

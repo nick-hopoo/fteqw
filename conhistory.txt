@@ -52,3 +52,203 @@ waterfog 0
 waterfog .3 .3 .3 .5 .5
 waterfog .3 .3 .3 .5 .5 .5
 waterfog 0.3 0.3 0.3 0.5
+game testmod
+map start
+impulse 15
+impulse 9
+impulse 9
+sv_cheats 1
+map start
+impulse 9
+give
+/give 
+give all
+give nailgun
+give all
+/give 
+/give all
+/give nailgun
+p1 impulse 9
+p2 impulse 9
++p1 impulse 9
++p2 impulse 9
+p2 impulse 9
+impulse 9
+cl_splitscreen 1
+cl_splitscreen 2
+/cl_splitscreen 
+/cl_splitscreen 1
+cl_splitscreen 1
+map start
+impulse 9
+/p1
+/p1 impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+p2 jump
++p2 jump
+map start
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
++p2 jump
++p2 jump
+p2 jump
+p2 +jump
++p2 jump
++p2 jump
++p2 impulse 0
++p2 impulse 1
++p2 jump
++p2
+p2
+k +p2 jump
+bind k +p2 jump
+/bind p2 jump
+bind +p2 jump
+bind k p2 jump
+bind k p2 +jump
+bind k p1 +jump
+bind space p1 +jump
+map start
++jump
+p1 +jump
++p1 jump
+unbind +jump
+unbind jump
+-jump
+-jump
+unbind k
+unbind numpad 0
+unbind numpad0
+unbind num0
+bind k +p2 jump
+-p2 jump
+impulse 9
+bind l +p2 shoot
+bind l +p2 fire
+impulse 4
+impulse 3
+impulse 4
+bind [ +p2 impulse 4
+bind [ +p2 impulse 4
+p2 impulse 4
+p2 impulse 9
+p2 impulse 4
+p2 lookup
+p2 look
+in_forceseat 2
+unbind k
+unbind l
+unbind j
+bind j in_forceseat 1
+bind k in_forceseat 2
+map start
+impulse 9
+p2 impulse 9
+map start
+impulse 9
+bind mouse4 in_forceseat 1
+bind mouse5 in_forceseat 2
+bind mouse5 in_forceseat 1
+bind mouse4 in_forceseat 2
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+impulse 9
+sv_cheats 1
+impulse 9
+startmap
+map start
+impulse 9
+p1 impulse 9
+game testmod
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
++mlook
+game testmod
+map start
+game testmod
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+slowgunvictimangle;slowgunvictimangle;slowgunvictimangle;slowgunvictimangle;slowgunvictimang`
+clear
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+save
+bind mouse4 in_forceseat 1
+bind mouse5 in_forceseat 2
+bind mouse4 in_forceseat 2
+bind mouse5 in_forceseat 1
+map start
+impulse 9
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+map start
+impulse 9
+god
+impulse 9

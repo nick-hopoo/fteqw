@@ -1,6 +1,7 @@
 
 //bizz custom shit i need
-void(entity victim)slowgunEffect;
+void (entity victim) slowgunEffect;
+
 //end custom shit bizz
 
 // Generic projectile spawning code (PRJ) ---
@@ -100,10 +101,12 @@ void() _PRJ_Touch =
 		break;
 	case PE_SLOWGUN:
 		if (ignore != self) // hit something
+		{
 			spawn_touchblood (self.damage_direct);
+			slowgunEffect (other);
+		}
 		else if (other != self) // didn't expire
 			TE_spike(self.origin);
-			slowgunEffect(other);
 		break;
 	case PE_SUPERSPIKE:
 		if (ignore != self) // hit something

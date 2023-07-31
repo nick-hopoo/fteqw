@@ -1036,35 +1036,6 @@ void() PlayerPreThink =
 		W_WeaponSwitch (W_BestWeapon ());
 	}
 
-	//
-	//do the stupid slowgun affliction bizz
-	if (self.bizz_slowgunafflictiontimer > 0 && self.bizz_slowgunvictimpoppedup == 0)
-	{
-		self.origin_z = self.origin_z + 5;
-		self.velocity = self.bizz_slowgunvictimangle * 10;
-		self.bizz_slowgunafflictiontimer --;
-		self.bizz_slowgunvictimpoppedup = 1;
-	}
-	else if (self.bizz_slowgunafflictiontimer > 0)
-	{
-		if (vlen(self.velocity) < vlen(self.bizz_slowgunvictimangle) * 10 / 10)
-		{
-			self.bizz_slowgunafflictiontimer = 0;
-			T_Damage (self, world, world, 50, MOD_SLOWGUN); 
-			sound (self, CHAN_VOICE, "player/land2.wav", 1, ATTN_NORM);
-		}
-		else
-		{
-			self.velocity = self.bizz_slowgunvictimangle * 10;
-			self.bizz_slowgunafflictiontimer --;
-		}
-		
-	}
-	else if (self.bizz_slowgunafflictiontimer == 0 && self.bizz_slowgunvictimpoppedup == 1)
-	{
-		self.bizz_slowgunvictimpoppedup = 0;
-	}
-	// end slowgun affliction -bizz
 };
 	
 /*
